@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: add code to check answers to questions
+            //for the mcq
+            function checkCapital(content){
+                const correctPlaceholder = document.getElementById("correctCapital")
+    if(content.innerText!= "delhi"){
+        content.style.background = "red";
+        correctPlaceholder.innerText = "InCorrect";
+    } else {
+        content.style.background ="green";
+        correctPlaceholder.innerText = "Correct";
+    }
+}
+// for the free response
+function checkSmart(){
+    const correctPlaceholder = document.getElementById("correctResponse");
+    const freeResponseAnswer = document.getElementById("freeResponse");
+    if (freeResponseAnswer.value!="study"){
+        correctPlaceholder.innerText = "InCorrect";
+        freeResponseAnswer.style.background = "red";
+    } else {
+        correctPlaceholder.innerText = "Correct";
+        freeResponseAnswer.style.background = "green";
+    }
+}
+    </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO-->
+                 <h3> what is the capital city of india ?</h3>
+                 <p id ="correctCapital"></p>
+                        <button onClick = "checkCapital(this)">delhi</button>
+                        <button onClick = "checkCapital(this)">mumbai</button>
+                        <button onClick = "checkCapital(this)">chennai</button>
+                        <button onClick = "checkCapital(this)">kolkata</button>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                 <h3>what should a smart person do?</h3>
+                 <p id = "correctResponse"></p>
+                 <form>
+                    <input type="text" id ="freeResponse">
+                 </form>
+                 <button onClick=checkSmart()>"Check Answer"</button>
+            </div>
+        </div>
+        </body>
+</html>
