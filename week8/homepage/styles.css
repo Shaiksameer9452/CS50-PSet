@@ -1,0 +1,86 @@
+body {
+    font-family: 'segoe UI', Tahoma, Geneva, sans-serif;
+    background-color #f8f9fa;
+}
+.page {
+    margin:0;
+    padding:0;
+    background-image:url("bg.jpg");
+    background-size:cover;
+    background-position:left center;
+    background-repeat:no-repeat;
+    background-color:#e89c2f;
+    font-family:sans-serif;
+    height:610px;
+    width:1267px;
+    display:flex;
+    justify-content:flex-end;
+    padding: 150px;
+}
+.p2{
+    background-color:black;
+    color:rgb(118, 117, 117);
+}
+.p3 {
+    margin-top:60px;
+    font-size: 4rem;
+    border-radius:50%;
+    background-color:#e67e22;
+}
+.p4 a{
+    text-align: right;
+
+}
+.about h2 {
+    margin-bottom: 20px;
+}
+.container {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 100px;
+}
+.photo {
+    margin-left: 70px;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 12px;
+}
+
+.skill-card {
+    background: var(--bg-elevated);
+    border-radius: 14px;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid var(--border-subtle);
+    font-size: 0.9rem;
+}
+.timeline {
+    border-left: 2px solid var(--border-subtle);
+    padding-left: 20px;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+}
+
+.timeline-item .year {
+    font-weight: bold;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 4px;
+}
+.section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+}
+.form-control {
+    border: var(--bs-border-width) solid var(--bs-border-color);
+}
+
+
+
+
